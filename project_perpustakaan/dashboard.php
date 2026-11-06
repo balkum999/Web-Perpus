@@ -25,12 +25,24 @@ if (!isset($_SESSION['username'])) { header("Location: index.php"); exit; }
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom mb-4 py-3">
-        <div class="container">
+        <!-- Tambahkan class 'position-relative' di sini agar animasi tidak lari dari container -->
+        <div class="container position-relative">
+            
+            <!-- Bagian Kiri (Logo) -->
             <a class="navbar-brand neon-text fs-4" href="#"><i class="bi bi-journal-bookmark-fill text-primary"></i> E-Perpus</a>
+            
+            <!-- ===== ANIMASI TENGAH ===== -->
+            <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 60px; z-index: 99;">
+                <!-- Ganti isi atribut src dengan link yang kamu copy barusan -->
+                <img src="https://media.tenor.com/kKzoMNDUQ3MAAAAj/arisu-aris.gif" alt="Arisu Dance" style="width: 100%; height: auto; object-fit: contain;">
+            </div>
+            
+            <!-- Bagian Kanan (Profil & Logout) -->
             <div class="d-flex align-items-center">
                 <span class="text-secondary me-3"><i class="bi bi-person-circle"></i> Halo, <strong class="text-light"><?php echo $_SESSION['username']; ?></strong></span>
                 <a href="logout.php" class="btn btn-outline-light btn-sm btn-neon"><i class="bi bi-box-arrow-right"></i> Keluar</a>
             </div>
+            
         </div>
     </nav>
 
