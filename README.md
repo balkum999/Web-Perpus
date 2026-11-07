@@ -54,5 +54,5 @@ project_perpustakaan/
 ---
 
 ## 🎥 Video Demo Aplikasi
-**Tautan Video YouTube:**
-[MASUKKAN_LINK_VIDEO_YOUTUBE_ANDA_DI_SINI]
+**Tautan Video YouTube**
+(https://youtu.be/4PYx97tpIDw)
